@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<link href="thetare.css" rel="Stylesheet" type="text/cscs">
+<html lang="en">
+    <head>
+        <title>Theater Tickets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="theatre.css">
+    </head>
+
+    <body>
+    
+    
+    <form name="UserForm"> <!--name of the user form used to collect user data-->
+        <label for="FName">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="Lname">Last Name:</label><br>
+        <input type="text" id="Lname" name="Lname" required><br> 
+        <!-- above is the code for the users first and second name -->
+        
+     
+        <label for="Address">Address</label><br>
+        <input type="text" id="Address" name="Address" required><br>
+        <label for="postcode">Postcode:</label><br>
+        <input type="text" id="Postcode" name="Postcode" required><br>
+        <!--above is code for the address of the user-->
+   
+   
+    <label>Here's A List Of The Available Shows:</label>
+    <select id="availableshows" class="availableshows" name="availableshows" required>
+        <option value="">Please Select A Show From the Following Options</option>
+        <option value="79">Phantom Of The Opera - £79</option>
+        <option value="85">Hamilton - £85</option>
+        <option value="67">Lion King - £67</option>
+        <option value="83">Miss Saigon - £83</option> 
+    </select>
+    <!--Code for teh shows available. shown as a drop down box. -->
+
+    
+    <label>Number Of Seats:</label>
+    <select id="numberofseats" class="numberofseats" name="numberofseats" required>
+        <option value="1">One </option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+        <option value="6">Six</option>
+        <option value="7">Seven</option>
+        <option value="8">Eight</option>
+        <option value="9">Nine</option>
+        <option value="10">Ten</option>
+        <option value="11">Eleven</option>
+        <option value="12">Twelve</option>
+        <option value="13">Thirteen</option>
+        <option value="14">Fourteen</option>
+        <option value="15">Fifteen</option>
+    </select>
+    <!--code for the Number of seats required-->
+
+    <!--Different Delivery Methods Code-->
+    <section id="mod" class="mod" name="mod" >
+        <label>E-Tickets - Free Delivery </label>
+        <input type="radio" id="Eticket" name="deliverymethod" value="0">
+        <label>Collect From Box Office - £1.50</label>
+        <input type="radio" id="boxoffice" name="deliverymethod" value="1.50">
+        <label>Posted - £3.99</label>
+        <input type="radio" id="post" name="deliverymethod" value="3.99">
+    </section>
+    <!-- Delivery Methods Code-->
+    
+    
+    <section>
+        <button class="showprice" id="showprice" name="showprice" type="button">Show Price: </button>
+    </section>
+    <!--Code for the overall price -->
+
+    
+   <label>Total Price:</label> 
+   <p id="Result_1"></p>
+   <p id="Result_2"></p>
+   <p id="Result_3"></p>
+   <P id="mod"></P>
+   <p id="Result_4"></p>
+   <!-- tags for the prices and discounts-->
+   
+   
+   <h1>Selected Choices</h1>
+   <div class="stats">
+       <table>
+           <tr>
+               <td><label>Payment:</label></td>
+               <td><span id="showname"></span></td>
+           </tr>
+           <tr>
+               <td><label>Original Cost:</label></td>
+               <td><span id="Results_1"></span></td>
+           </tr>
+           <tr>
+               <td><label>Discount</label></td>
+               <td><span id="Results_2"></span></td>
+           </tr>
+           <tr>
+               <td><label>Price After Discount:</label></td>
+               <td><span id="Results_3"></span></td>
+           </tr>
+           
+           <tr>
+             <td><label>Cost Of Delivery:</label></td>
+             <td><p id="Results4"></p></td>
+           </tr>      
+           <tr>
+               <td><label>overall Cost to Pay:</label></td>
+               <td><P id="overallcost"></P></td>
+           </tr>
+       </table>      
+   </div>
+
+   
+    </form>
+</body>
+    <script src="theatre.js"></script>
+</html>
+

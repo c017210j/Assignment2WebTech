@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="fruitmachine.css">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="fruit Machine">
+    <title>Fruit Machine</title>
+</head>
+
+<main>
+
+    <body>
+        <section id="status">Fruit Machine</section><br> <br>
+        <section id="slots">
+            <img id="fruit1" src="fruitmachineresources/fruit1.png" width="100">
+            <!-- link to the image first shown to the user-->
+            <img id="fruit2" src="fruitmachineresources/fruit2.png" width="100">
+            <!-- ;ink to the second image shown to the user -->
+            <img id="fruit3" src="fruitmachineresources/fruit3.png" width="100">
+            <!-- link to the last image shown to the user at the begining-->
+        </section><br>
+        <section id="buttons" >
+        <button type="submit" id="spin" name="spin">spin</button>
+        <!-- details for the spin button-->
+        <button type="submit" id="collectwinnings" name="collectwinnings">Collect</button>
+      <!-- details for the button that allows you to collect your winnings -->
+        <button id="button">Your Credit</button>
+        <!-- what the button says-->
+    </section>
+    <section id="text">
+
+        <div id="credits">
+            <p>Available Credits:</p>
+            <!-- label for the credits shown to the user -->
+            <p id="credit">0</p>
+            <!-- the amount shown to the user when they beginning-->
+        </div>
+        <div id="winnings">
+            <label for="Winnings">Your Winning:</label><br>
+            <!-- label for the winnings amount-->
+            <p id="Winnings">0</p>
+            <!-- amount the user sees at the beginning -->
+        </div>
+    </section>
+        <script src="fruitmachine.js"></script>
+        <!-- link to the javascript -->
+    </body>
+</main>
+
+</html>
